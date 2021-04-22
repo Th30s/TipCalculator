@@ -1,18 +1,14 @@
 import React from "react";
 
 function SelectTip(props){
-
-  // round brackets. :P 
-  //like that?
-  // almost... not curly ones Nice!
 return (
 <div>
-  <label for="pet-select">Choose a pet:</label>
+  <label for="tipPercent-select">Choose a tip percentage:</label>
 
-  <select name="pets" id="pet-select">
+  <select name="tipPercent" id="tipPercent-select">
       <option value="">--Please choose an option--</option>
-      <option value="dog">Dog</option>
-      <option value="goldfish">Goldfish</option>
+      <option value="15">15%</option>
+      <option value="20">20%</option>
   </select>
 </div>
 )
