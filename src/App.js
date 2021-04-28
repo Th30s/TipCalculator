@@ -1,3 +1,4 @@
+import React, { Component, useState } from "react";
 import "./styles.css";
 import ResultPrice from "./components/resultPrice";
 import InputPrice from "./components/inputPrice";
@@ -6,15 +7,18 @@ import Enter from "./components/enter";
 
 
 export default function App() {
+  let [inputPrice, setinputPrice] = useState(0);
+  console.log("inputPriceInApp:", inputPrice);
+  let [tipPrecentage, setTipPrecentage] = useState(0);
+  let [totalPrice, setTotalPrice] = useState(0);
   return (
     <div className="App">
       <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <ResultPrice inputPrice={100} tipPrecent={25}/>
-      <InputPrice />
+      <ResultPrice totalPrice={totalPrice}/>
+      <InputPrice updateInputPriceInApp={setinputPrice}/>
       <SelectTip />
-      {/*<Enter />*/}
-
+      <Enter />
     </div>
   );
 }
+
