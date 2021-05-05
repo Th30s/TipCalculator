@@ -1,17 +1,24 @@
 import React from "react";
 
 function SelectTip(props){
-return (
-<div>
-  <label for="tipPercent-select">Choose a tip percentage:</label>
+  function changeTipPercent(event){
+    let tip = event.target.value;
+    props.test(event.target.value)
+    console.log(tip)
+  };
+  return (
+    <div>
+      <label for="tipPercent-select">Choose a tip percentage:</label>
 
-  <select name="tipPercent" id="tipPercent-select">
-      <option value="">--Please choose an option--</option>
-      <option value="15">15%</option>
-      <option value="20">20%</option>
-  </select>
-</div>
-)
+      <select id="tipPercent-select" onChange={changeTipPercent}>
+          <option value="">--Please choose an option--</option>
+          <option value= "15">15%</option>
+          <option value= "20">20%</option>
+      
+      </select>
+    </div>
+  );
+  // the indent might help you see where the syntax issue is ;)
 };
 
 export default SelectTip;
