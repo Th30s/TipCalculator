@@ -2,3 +2,54 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+#tipPercent-select {
+padding: 10px; 
+}
+body{
+  background-color: #222222;
+  color: white ;
+}
+
+#enterBtn {
+margin: 25px;
+background-color:  #4CAF50;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+}
+
+#enterBtn:hover {
+ background-color: #006400;
+ transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+#inputPriceDiv{
+  padding: 25px 0px 40px 0px;
+  
+}
+input{
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+}
+
+
+#divGreeting {
+  border-bottom-style: solid;
+  border-width: 10px;
+  padding-bottom: 10px;
+  background-color: #1a1a1a;
+}
+
+
+#divGreeting{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

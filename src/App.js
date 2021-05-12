@@ -4,6 +4,7 @@ import ResultPrice from "./components/resultPrice";
 import InputPrice from "./components/inputPrice";
 import SelectTip from "./components/tipPercent";
 import Enter from "./components/enter";
+import signLogo from "./images/signLogo.png";
 
 
 export default function App() {
@@ -14,7 +15,11 @@ export default function App() {
   console.log("totalPrice = " + totalPrice)
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
+      <div id="divGreeting">
+        <img src={signLogo} style={{ width: '100px' }} alt="Logo" />
+        <h1 id="greetingh1">Welcome to LibreTip!</h1>
+        <div id="bottomGreetingBorder" />
+      </div>
       <ResultPrice totalPrice={totalPrice} />
       <InputPrice updateInputPriceInApp={setinputPrice}/>
       <SelectTip test={setTipPrecentage}/>

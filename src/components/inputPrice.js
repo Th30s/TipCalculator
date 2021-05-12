@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 
 
 function InputPrice(props) {
-  let [inputValue, setinputValue] = useState(0);
+  let [inputValue, setinputValue] = useState();
 
   const onChange = (event) => {
     console.log(event.target.value);
@@ -10,8 +10,8 @@ function InputPrice(props) {
     props.updateInputPriceInApp(event.target.value)
   };
   
-  return <input type="text"  value={inputValue} onChange={onChange} />
-  ;
+  return (<div id="inputPriceDiv"><input size="40" type="text" placeholder="Type price here" value={inputValue} onChange={onChange} />
+  </div>);
 }
 
 export default InputPrice;
