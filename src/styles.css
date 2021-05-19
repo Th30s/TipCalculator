@@ -1,55 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 .App {
-  font-family: sans-serif;
+  font-family: "Newsreader";
   text-align: center;
+  background-color: #222222;
+  color: white;
+  min-height: 100vh;
+}
+
+/**/
+.App.light{
+  font-family: "Newsreader";
+  text-align: center;
+  background-color: #e0e0e077;
+  color: black;
+  min-height: 100vh;
 }
 
 #tipPercent-select {
-padding: 10px; 
+  padding: 10px;
 }
-body{
-  background-color: #222222;
-  color: white ;
+body {
+  margin: 0px;
 }
 
 #enterBtn {
-margin: 25px;
-background-color:  #4CAF50;
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-display: inline-block;
-font-size: 16px;
-cursor: pointer;
+  font-family: "Archivo Black", sans-serif;
+  margin: 25px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 #enterBtn:hover {
- background-color: #006400;
- transition: background 250ms ease-in-out, 
-                transform 150ms ease;
+  font-family: "Archivo Black", sans-serif;
+  background-color: #006400;
+  transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
-#inputPriceDiv{
+#inputPriceDiv {
   padding: 25px 0px 40px 0px;
-  
 }
-input{
+input {
   padding: 10px 5px 10px 5px;
   text-align: center;
 }
 
-
-#divGreeting {
+.divGreeting {
   border-bottom-style: solid;
-  border-width: 10px;
-  padding-bottom: 10px;
-  background-color: #1a1a1a;
+  border-bottom-width: 10px;
+  background-color: #141414;
+}
+.divGreeting.light{
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  background-color: #a3a2a277;
 }
 
-
-#divGreeting{
+.divGreeting {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.darkModeDiv{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 10px;
+}
 
+/* W3 Schools slider styling*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
