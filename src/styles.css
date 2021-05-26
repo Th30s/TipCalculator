@@ -18,8 +18,14 @@
   min-height: 100vh;
 }
 
+#emailInput {
+  margin: 25px;
+text-align: center;
+}
+
 #tipPercent-select {
   padding: 10px;
+  margin: 25px
 }
 body {
   margin: 0px;
@@ -50,6 +56,14 @@ body {
 input {
   padding: 10px 5px 10px 5px;
   text-align: center;
+}
+
+a {
+ /* add some CSS right here! can you bold the text is that good or more?
+  a little more i think would look good */
+ margin-left: 25px;
+ font-weight: bold;
+color: #006400
 }
 
 .divGreeting {
